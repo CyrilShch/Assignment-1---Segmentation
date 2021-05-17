@@ -61,7 +61,6 @@ python Code/filtering.py
 - Clone the repository executing in a cell:
 ```
 git clone https://github.com/CyrilShch/Assignment1_Segmentation.git
-   
 ```
 - Move to the directory of the cloned repository executing in a cell:
 ```
