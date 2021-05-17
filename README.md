@@ -32,6 +32,8 @@ python Code/debug_img.py
 ### 2. Running the actual image segmentation script
 An example of running the image segmentation script. 
 ```
+# Note: provide an image in .jpg format having 3 RGB channels.
+
 python Code/imageSegmentation.py
     --im Data/img3.jpg    # path to the image
     --r 2                 # the search window radius
@@ -45,6 +47,8 @@ python Code/imageSegmentation.py
 ### 3. Running the filtering script
 An example of running the filtering script. 
 ```
+# Note: provide an image in .jpg format having 3 RGB channels.
+
 python Code/filtering.py
     --im Data/img3.jpg    # path to the image
     
