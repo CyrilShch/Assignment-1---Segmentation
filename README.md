@@ -43,6 +43,7 @@ python Code/imageSegmentation.py
     --feature_type 5      # the dimension of the feature vector as 3D or as 5D (specifying the color and x, y coordinates for each pixel)
     --cloud True          # flag to indicate whether we plot a 3D cloud of points distribution
     --opt False           # a flag to indicate whether we use optimized version of meanshift algorithm or not
+    --save True           # Flag to indicate whether we want to save a segmented image
     
 ```
 
@@ -77,5 +78,6 @@ python Code/imageSegmentation.py
     --feature_type 5      # the dimension of the feature vector as 3D or as 5D (specifying the color and x, y coordinates for each pixel)
     --cloud True          # flag to indicate whether we plot a 3D cloud of points distribution
     --opt False           # a flag to indicate whether we use optimized version of meanshift algorithm or not
+    --save True           # Flag to indicate whether we want to save a segmented image
     
 ```
