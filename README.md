@@ -26,4 +26,26 @@ python Code/debug_img.py
     --data Data/pts.mat   # the data path
     --r 2                 # the search window radius
     --c 4                 # some  constant  value (c = 4 by default)
+    --opt True            # a flag to indicate whether we use optimized version of meanshift algorithm or not
+    
+```
+### 2. Running the actual image segmentation script
+An example of running the image segmentation script. 
+```
+python Code/imageSegmentation.py
+    --im Data/img3.jpg    # path to the image
+    --r 2                 # the search window radius
+    --c 4                 # some  constant  value (c = 4 by default)
+    --feature_type 5      # the dimension of the feature vector as 3D or as 5D (specifying the color and x, y coordinates for each pixel)
+    --cloud True          # flag to indicate whether we plot a 3D cloud of points distribution
     --opt False           # a flag to indicate whether we use optimized version of meanshift algorithm or not
+    
+```
+
+### 3. Running the filtering script
+An example of running the filtering script. 
+```
+python Code/filtering.py
+    --im Data/img3.jpg    # path to the image
+    
+```
