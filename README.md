@@ -57,17 +57,17 @@ python Code/filtering.py
 ```
 
 ### 4. Running the scripts on the Google Colab platform
--- Create a new notebook on Google Colab. 
--- Clone the repository executing in a cell:
+- Create a new notebook on Google Colab. 
+- Clone the repository executing in a cell:
 ```
 git clone https://github.com/CyrilShch/Assignment1_Segmentation.git
    
 ```
--- Move to the directory of the cloned repository executing in a cell:
+- Move to the directory of the cloned repository executing in a cell:
 ```
 cd Assignment1_Segmentation
 ```
--- Run a script. For example, execute in a cell:
+- Run a script. For example, execute in a cell:
 ```
 # Note: provide an image in .jpg format having 3 RGB channels.
 
