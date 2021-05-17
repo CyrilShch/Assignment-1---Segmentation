@@ -1,4 +1,4 @@
-# Assignment-1--Segmentation
+# Assignment-1.Segmentation
 
 
 
@@ -60,11 +60,11 @@ python Code/filtering.py
 - Create a new notebook on Google Colab. 
 - Clone the repository executing in a cell:
 ```
-git clone https://github.com/CyrilShch/Assignment1_Segmentation.git
+git clone https://github.com/CyrilShch/Kirill_Shcherbakov_First_Assignment_CV2021.git
 ```
 - Move to the directory of the cloned repository executing in a cell:
 ```
-cd Assignment1_Segmentation
+cd Kirill_Shcherbakov_First_Assignment_CV2021
 ```
 - Run a script. For example, execute in a cell:
 ```
