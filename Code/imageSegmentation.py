@@ -6,16 +6,18 @@ from plotclusters3D import *
 from meanshift import *
 from meanshift_opt import *
 import argparse
+import matplotlib.image as mpimg
 import warnings
 warnings.simplefilter("ignore")
 
 
+
 # SCRIPT USAGE EXAMPLE:
 ### non-optimized version:
-# python Code/imageSegmentation.py --im Data/img3.jpg --r 2 --c 4 --feature_type 5 --cloud True --opt False
+# python Code/imageSegmentation.py --im Data/img3.jpg --r 2 --c 4 --feature_type 5 --cloud True --opt False --save True
 
 ### optimized version:
-# python Code/imageSegmentation.py --im Data/img3.jpg --r 2 --c 4 --feature_type 5 --cloud True --opt True
+# python Code/imageSegmentation.py --im Data/img3.jpg --r 2 --c 4 --feature_type 5 --cloud True --opt True --save True
 
 def str2bool(v):
     """
@@ -51,6 +53,10 @@ def get_parser():
     parser.add_argument("--opt", type=str2bool, nargs='?',
                         const=True, default=True,
                         help="Flag to indicate whether we use optimized version of meanshift algorithm or not")
+    
+    parser.add_argument("--save", type=str2bool, nargs='?',
+                        const=True, default=True,
+                        help="Flag to indicate whether we want to save a segmented image")
 
     return parser
 
@@ -133,6 +139,10 @@ if __name__ == '__main__':
 
     # run the segmentation function
     img_rgb, segmented_rgb, processed_img_reshaped, labels, peaks, num_peaks = imageSegmentation(params)
+    
+    if params.save:
+        # save segmented image
+        mpimg.imsave("segmented_image.jpg", segmented_rgb)
 
     # display the segmented and original images
     plot_images(img_rgb, segmented_rgb, num_peaks, params)
