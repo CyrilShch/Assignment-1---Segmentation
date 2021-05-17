@@ -13,7 +13,8 @@ pip install -e .
 
 - Python 3
 - [NumPy](http://www.numpy.org/)
-- [PyTorch](http://pytorch.org/) (currently tested on version 0.4 and 1.0)
-- [fastBPE](https://github.com/facebookresearch/XLM/tree/master/tools#fastbpe) (generate and apply BPE codes)
-- [Moses](https://github.com/facebookresearch/XLM/tree/master/tools#tokenizers) (scripts to clean and tokenize text only - no installation required)
-- [Apex](https://github.com/nvidia/apex#quick-start) (for fp16 training)
+- [Matplotlib](https://matplotlib.org/)
+- [Scipy](https://www.scipy.org/)
+- [Scipy.io](https://docs.scipy.org/doc/scipy/reference/io.html)
+- [Collections](https://docs.python.org/3/library/collections.html)
+- [Skimage](https://scikit-image.org/)
