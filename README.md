@@ -9,6 +9,8 @@ Install the python package in editable mode with
 pip install -e .
 ```
 
+The code was made and adopted in [Pycharm](https://www.jetbrains.com/pycharm/) IDE.
+
 ## Dependencies
 
 - Python 3
